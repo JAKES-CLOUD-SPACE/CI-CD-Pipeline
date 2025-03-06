@@ -36,7 +36,18 @@ jobs:
       - name: Run Build
         run: npm run build
 
-      # Run tests
-      - name: Run Tests
-        run: npm run test
+      # Start the application
+      - name: Start the Application
+        run: npm run start &
+
+      # Wait for the server to be ready
+      - name: Wait for Server
+        run: npx wait-on http://localhost:3001
+
+      # Run Cypress tests
+      - name: Run Cypress Tests
+        uses: cypress-io/github-action@v6
+        with:
+          start: npm run start
+          wait-on: http://localhost:3001
         
