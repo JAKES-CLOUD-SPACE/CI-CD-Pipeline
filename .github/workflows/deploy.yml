@@ -12,9 +12,6 @@
 
             - name: Cypress run
               uses: cypress-io/github-action@v6
-              run: |
-                npm ci
-                npm run test
 
             - name: Deploy to render
               if: github.ref == 'refs/heads/main'
