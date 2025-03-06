@@ -43,6 +43,7 @@ jobs:
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         with:
+          components: true
           start: npm run start
           wait-on: http://localhost:3001
         
