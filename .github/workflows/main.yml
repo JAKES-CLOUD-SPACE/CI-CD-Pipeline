@@ -1,6 +1,6 @@
 # Name of workflow
 name: Lint and Test workflow
-#nothing to do with the name of the file
+#nothing
 # Trigger workflow on all pull requests
 on:
   pull_request:
