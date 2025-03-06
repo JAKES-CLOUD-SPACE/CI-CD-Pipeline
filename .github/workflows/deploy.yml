@@ -12,7 +12,7 @@
 
             - name: Test
               run: |
-                npm ci
+                npm install
                 npm run test
 
             - name: Deploy to render
