@@ -10,7 +10,8 @@
           steps:
             - uses: actions/checkout@v3
 
-            - name: Test
+            - name: Cypress run
+              uses: cypress-io/github-action@v6
               run: |
                 npm ci
                 npm run test
