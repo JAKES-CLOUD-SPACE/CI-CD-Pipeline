@@ -34,12 +34,6 @@ jobs:
       # Install dependencies
       - name: 🧰 Install Deps
         run: npm install
-      - name: Wait for MongoDB
-        run: |
-          until nc -z localhost 27017; do
-            echo "Waiting for MongoDB..."
-            sleep 1
-          done
 
       # Run build
       - name: Run Build
