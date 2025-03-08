@@ -39,11 +39,15 @@ jobs:
       - name: Run Build
         run: npm run build
 
-      # Run Cypress tests
-      - name: Run Cypress Tests
+      # Run server
+      - name: Server
         uses: cypress-io/github-action@v6
         with:
           start: npm run start
           wait-on: http://localhost:3001
+
+      - name: Run tests
+        run: npm run test-component
+        with:
           components: true
         
