@@ -45,5 +45,6 @@ jobs:
         with:
           start: npm run start
           wait-on: http://localhost:3001
+          run: npm run test-component
           components: true
         
