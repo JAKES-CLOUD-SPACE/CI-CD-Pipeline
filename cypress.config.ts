@@ -10,11 +10,11 @@ export default defineConfig({
       viteConfig,
     },
     specPattern: "cypress/component/**/*.cy.{js,ts,jsx,tsx}",
+    setupNodeEvents(on, config) {
+    },
   },
 
- // e2e: {
-  //  setupNodeEvents(on, config) {
+
       // implement node event listeners here
-  //  },
  // },
 });
