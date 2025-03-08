@@ -48,6 +48,5 @@ jobs:
 
       - name: Run tests
         run: npm run test-component
-        with:
-          components: true
+
         
