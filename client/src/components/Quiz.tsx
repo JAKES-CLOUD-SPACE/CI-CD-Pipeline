@@ -1,7 +1,7 @@
 import { useState, } from 'react';
 import type { Question } from '../models/Question';
 import { getQuestions } from '../services/questionApi';
-
+//full steam ahead
 const Quiz = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
